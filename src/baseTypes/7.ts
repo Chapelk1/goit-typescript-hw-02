@@ -4,19 +4,16 @@
 */
 
 enum Week {
-  monday = 1,
-  tuesday = 1,
-  wednesday = 1,
-  thursday = 1,
-  friday = 1,
-  saturday = 0,
-  sunday= 0,
+  monday,
+  tuesday,
+  wednesday,
+  thursday,
+  friday ,
+  saturday,
+  sunday,
 }
 
 function isWeekend(day:Week):boolean {
-  if (day === 1) {
-    return true
-  }
-  return false
+  return day === Week.saturday || day === Week.sunday
 }
 

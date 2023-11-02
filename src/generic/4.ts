@@ -3,7 +3,7 @@
 */
 
 
-interface Obj {
+interface Book {
   title: string;
 }
 
@@ -14,7 +14,7 @@ class Component<T> {
   }
 }
 
-class Page extends Component<Obj> {
+class Page extends Component<Book> {
   pageInfo () {
     console.log(this.props.title);
   }
